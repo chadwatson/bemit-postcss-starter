@@ -92,6 +92,6 @@ You can easily plug this into your current NPM build scripts by adding a new scr
 
 ```json
 "scripts": {
-  "css": "cd css & npm run build -- -o style.css" 
+  "css": "cd css && npm run build -- -o style.css" 
 }
 ```
