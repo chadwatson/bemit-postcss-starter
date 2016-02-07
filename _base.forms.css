@@ -1,0 +1,119 @@
+/****************************
+ * BASE - FORM ELEMENTS
+ ****************************/
+
+@custom-selector :--placeholder
+  &:placehoder-shown,
+  &::-webkit-input-placeholder,
+  &::-moz-placeholder,
+  &:-ms-input-placeholder;
+
+@custom-selector :--input
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  input[type="button"],
+  input[type="submit"],
+  textarea;
+
+@custom-selector :--field
+  input[type="text"],
+  input[type="time"],
+  input[type="url"],
+  input[type="email"],
+  input[type="number"],
+  input[type="password"],
+  select,
+  textarea;
+
+/**
+ * Default Styles
+ */
+
+:--input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+:--field {
+  width: 100%;
+  padding: 0.5em 1em;
+  margin: 0;
+  border-radius: 0;
+  border: 1px solid var(--gray-dark);
+  outline: none;
+  color: var(--gray-light);
+
+  &:focus {
+    outline: none;
+    border-color: var(--gray-light);
+    color: var(--black);
+  }
+}
+
+
+/**
+ * Placeholders
+ */
+
+:--field {
+  :--placeholder {
+    color: var(--black);
+  }
+
+  &:focus:--placeholder {
+    color: var(--color-primary);
+  }
+}
+
+/* Add the correct appearance, but also adjust the height to fit with our input fields. */
+/* This only matters for apple devices (height) */
+select {
+  background: var(--white);
+  height: 30px;
+}
+
+/* Make sure we are not adding the select height to multi select */
+select[multiple] {
+  height: auto;
+}
+
+/* Styles relevant to checkboxes */
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+/* Styles relevant to radio buttons */
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+
+label {
+  color: var(--gray-light);
+  font-weight: 600;
+}
+
+
+/**
+ * Browser Specific
+ */
+
+/* Remove extra spacing that Firefox adds to buttons */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0
+}
+
+/* Remove spinner from type="number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}

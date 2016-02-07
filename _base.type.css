@@ -1,0 +1,86 @@
+/****************************
+ * BASE - TYPE
+ ****************************/
+
+/**
+ * Pseudo
+ */
+
+::selection {
+  background: var(--gray);
+  color: var(--white);
+  text-shadow: none;
+}
+
+/**
+ * General
+ */
+
+html {
+  font-size: var(--html-font-size);
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-default);
+  font-size: var(--body-font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: 1px 1px 1px rgba(get-color(black), 0.004);
+}
+
+a {
+  color: var(--color-primary);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--color-primary-dark);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+
+/**
+ * Headlines
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: var(--line-short);
+
+  a {
+    color: var(--black);
+  }
+}
+
+
+/**
+ * Text Components
+ */
+
+p,
+dl,
+address {
+  font-size: 1em;
+  line-height: 1;
+}
+
+p,
+li,
+dt,
+dd {
+  font-weight: normal;
+  font-style: normal;
+}
+
+li {
+  line-height: 1;
+}

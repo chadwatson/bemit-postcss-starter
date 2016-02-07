@@ -1,0 +1,17 @@
+{
+  "name": "bemit-postcss-starter",
+  "version": "1.0.0",
+  "description": "PostCSS boilerplate with BEM, ITCSS, OOCSS, and namespaces.",
+  "main": "index.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss -u postcss-import -u postcss-cssnext index.css"
+  },
+  "author": "Chad Watson <chad@40digits.com> (http://chadwatson.io/)",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss-cli": "^2.5.0",
+    "postcss-cssnext": "^2.4.0",
+    "postcss-import": "^8.0.2"
+  }
+}

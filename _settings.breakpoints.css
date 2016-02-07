@@ -1,0 +1,41 @@
+:root {
+  --bp-min:       32em;
+  --bp-xsmall:    48em;
+  --bp-small:     60em;
+  --bp-medium:    76.8em;
+  --bp-large:     96em;
+  --bp-xlarge:    122em;
+  --bp-xxlarge:   144em;
+  --bp-xxxlarge:  164em;
+}
+
+@custom-media --min           (width >= var(--bp-min));
+@custom-media --max-min       (width <= var(--bp-min));
+@custom-media --only-min      (width <= var(--bp-min)) and (width > var(--bp-xsmall));
+
+@custom-media --xsmall        (width >= var(--bp-xsmall));
+@custom-media --max-xsmall    (width <= var(--bp-xsmall));
+@custom-media --only-xsmall   (width <= var(--bp-xsmall)) and (width > var(--bp-small));
+
+@custom-media --small         (width >= var(--bp-small));
+@custom-media --max-small     (width <= var(--bp-small));
+@custom-media --only-small    (width <= var(--bp-small)) and (width > var(--bp-medium));
+
+@custom-media --medium        (width >= var(--bp-medium));
+@custom-media --max-medium    (width <= var(--bp-medium));
+@custom-media --only-medium   (width <= var(--bp-medium)) and (width > var(--bp-large));
+
+@custom-media --large         (width >= var(--bp-large));
+@custom-media --max-large     (width <= var(--bp-large));
+@custom-media --only-large    (width <= var(--bp-large)) and (width > var(--bp-xlarge));
+
+@custom-media --xlarge        (width >= var(--bp-xlarge));
+@custom-media --max-xlarge    (width <= var(--bp-xlarge));
+@custom-media --only-xlarge   (width <= var(--bp-xlarge)) and (width > var(--bp-xxlarge));
+
+@custom-media --xxlarge       (width >= var(--bp-xxlarge));
+@custom-media --max-xxlarge   (width <= var(--bp-xxlarge));
+@custom-media --only-xxlarge  (width <= var(--bp-xxlarge)) and (width > var(--bp-xxxlarge));
+
+@custom-media --xxxlarge      (width >= var(--bp-xxxlarge));
+@custom-media --max-xxxlarge  (width <= var(--bp-xxxlarge));

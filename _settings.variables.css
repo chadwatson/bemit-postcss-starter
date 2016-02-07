@@ -1,0 +1,48 @@
+:root {
+
+  --html-font-size:    62.5%;
+  --body-font-size:    16px;
+  --em-base:           16;
+  --base-font-size:    10px;
+
+  --gutter-half:       1rem;
+  --gutter-full:       calc(var(--gutter-half) * 2);
+
+  --wrapper-xsmall:    98rem;
+  --wrapper-small:     68rem;
+  --wrapper-standard:  102rem;
+  --wrapper-large:     144rem;
+
+  --cubic:             cubic-bezier(0.63, 0.64, 0.3, 1);
+  --timing:            500ms;
+  --timing-fast:       350ms;
+
+  --font-default:      Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+  --line-short:        1.1;
+  --line-standard:     1.25;
+  --line-medium:       1.5;
+  --line-tall:         2;
+
+  --black: #2C3E50;
+  --white: #fff;
+  
+  --gray: #999;
+  --gray-light: #eee;
+  --gray-medium: #ccc;
+  --gray-dark: #333;
+
+  --color-primary: #139397;
+  --color-primary-light: #33afb3;
+  --color-primary-dark: #264d4e;
+
+  --z-pit:          -1;
+  --z-default:      1;
+  --z-footer:       5;
+  --z-header:       10;
+  --z-nav:          20;
+  --z-announce:     30;
+  --z-modal:        40;
+  --z-overlay:      50;
+  --z-browsehappy:  60;
+}
